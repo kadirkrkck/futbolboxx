@@ -5,7 +5,10 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
+html, body {
+    height: 100%;
+    width: 100%;
+}
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f4f4;
