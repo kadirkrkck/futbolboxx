@@ -5,16 +5,25 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-html, body {
-    height: 100%;
-    width: 100%;
-}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
     overflow-x: hidden;
+	display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 /* Yazı Seçimi & Link Stil */
@@ -234,12 +243,14 @@ main {
     .recent .box {
         flex: 1 1 calc(50% - 20px); /* Mobilde 2 kutu yan yana */
         height: auto; /* Yükseklik otomatik olarak ayarlanır */
+		width: 100%;
     }
 }
 
 @media (max-width: 480px) {
     .recent .box {
         flex: 1 1 100%; /* Daha küçük ekranlarda kutular alt alta gelir */
+		width:100;
     }
 }
 
@@ -483,11 +494,7 @@ input[type="submit"]:hover {
         margin-left: 0;
         padding: 100px 20px;
     }
-	
-    body {
-	overflow-x: hidden;
-    }
-	
+
     nav {
         width: 100%;
         height: auto;
@@ -605,6 +612,164 @@ input[type="submit"]:hover {
     }
 }
 
+/* =============== MOBİL UYUMLU TASARIM =============== */
 
+/* Küçük ekranlar (max-width: 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Daha küçük yazı boyutu */
+        line-height: 1.5;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    header {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .menu-item {
+        padding: 12px;
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer {
+        font-size: 12px;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+/* Orta Boy Ekranlar (max-width: 768px) */
+@media (max-width: 768px) {
+    body {
+        font-size: 15px; /* Daha geniş tabletlerde biraz daha büyük yazı boyutu */
+        line-height: 1.6;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    header {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .menu-item {
+        padding: 10px;
+        font-size: 18px;
+        width: auto;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .footer {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+/* Büyük Tablet ve Küçük Dizüstü Bilgisayarlar (min-width: 769px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .container {
+        padding: 25px;
+    }
+
+    header {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .menu-item {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .footer {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+/* Masaüstü ve Büyük Ekranlar (min-width: 1025px) */
+@media (min-width: 1025px) {
+    body {
+        font-size: 18px;
+        line-height: 1.8;
+    }
+
+    .container {
+        padding: 30px;
+    }
+
+    header {
+        text-align: left;
+        padding: 25px;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .menu-item {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .footer {
+        font-size: 18px;
+        text-align: center;
+    }
+}
 
 }
