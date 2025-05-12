@@ -593,7 +593,7 @@ input[type="submit"]:hover {
 /* Mobilde arama kutusu daha dar olabilir */
 @media (max-width: 767px) {
     #search-input {
-        width: 90%; /* Mobilde ekran genişliğine göre */
+        width: 100%; /* Mobilde ekran genişliğine göre */
     }
 }
 
