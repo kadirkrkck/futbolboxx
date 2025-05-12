@@ -554,7 +554,8 @@ input[type="submit"]:hover {
 /* Mobilde de iyi çalışacak şekilde, daha geniş ekranlarda arama sonuçları genişletilebilir */
 @media (min-width: 768px) {
     #search-results {
-        width: 300vw; /* Masaüstü için belirli bir genişlik */
+        width: 300px; /* Masaüstü için belirli bir genişlik */
+		height: 100%;
         left: 50%; /* Ortada hizalama */
         transform: translateX(-50%); /* Tam ortalamak için */
     }
@@ -581,63 +582,22 @@ input[type="submit"]:hover {
     color: #000;
 }
 
-/* Tüm cihazlarda başlangıç ayarı */
-#search-input {
-    box-sizing: border-box;
-    padding: 8px 12px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    width: 100%;
-    max-width: 100%;
-    background-color: #fff;
-    appearance: none;
-    -webkit-appearance: none;
-    transition: all 0.3s ease;
-    outline: none;
-}
-
-#search-input:focus {
-    border-color: #999;
-    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05);
-}
-
-/* Arama çubuğunu saran container */
-.search-bar {
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 16px;
-}
-
-/* Masaüstü için özel ayar */
+/* Arama kutusunun stilini masaüstü için optimize et */
 @media (min-width: 768px) {
     #search-input {
-        width: 250px;
+        padding: 8px 12px;
+        font-size: 16px;
+        width: 250px; /* Daha geniş masaüstü arama kutusu */
     }
 }
 
-/* Küçük ekranlarda (telefonlar) daha sade görünüm */
+/* Mobilde arama kutusu daha dar olabilir */
 @media (max-width: 767px) {
     #search-input {
-        width: calc(100vw - 32px); /* Sağdan soldan boşluk */
-        margin: 0 0; /* Zaten container padding ile hizalı */
-        font-size: 16px;
-    }
-}
-
-/* Çok küçük ekranlar (320px gibi) için güvenlik */
-@media (max-width: 400px) {
-    #search-input {
-        font-size: 14px;
+        width: 100%; /* Mobilde ekran genişliğine göre */
     }
 }
 
 
-	
-}
 
 }
