@@ -1,6 +1,6 @@
 /* =============== GENEL STİLLER =============== */
 * {
-    margin: 1px;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
