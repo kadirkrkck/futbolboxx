@@ -437,6 +437,8 @@ footer {
     background-color: #2d2f33;
     color: white;
     text-align: center;
+    position: absolute;
+    bottom: 0;
     padding: 20px;
     width: 100%;
     font-size: 14px;
@@ -454,6 +456,10 @@ footer .social-icons a {
     color: #f5a623;
     font-size: 20px;
     transition: all 0.3s ease-in-out;
+}
+
+footer .social-icons a:hover {
+    color: #fff;
 }
 
 footer .social-icons a:hover {
