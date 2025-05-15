@@ -12,7 +12,7 @@ body {
     color: #333;
     line-height: 1.6;
     overflow-x: hidden;
-	display: flex;
+    display: flex;
     flex-direction: column;
 }
 
@@ -789,15 +789,15 @@ input[type="submit"]:hover {
 
 .iletisim-form {
   max-width: 700px;
-  width: 100%;
-  margin: 100px auto; /* Sayfanın ortasında */
+  width: 90vw;
+  margin: 50px auto;
   padding: 40px;
-  background-color: #f9f9f9;
+  background-color: #fff;
   border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 }
 
 .iletisim-form label {
