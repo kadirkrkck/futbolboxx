@@ -431,9 +431,8 @@ footer {
     background-color: #2d2f33;
     color: white;
     text-align: center;
-    position: fixed;
+    position: relative;
     bottom: 0;
-    left: 0;
     padding: 20px;
     width: 100%;
     font-size: 14px;
@@ -789,12 +788,12 @@ input[type="submit"]:hover {
     }
 
 .iletisim-form {
-  max-width: 600px;
-  width: 90%;
-  margin: 80px auto; /* Sayfanın ortasında */
-  padding: 20px;
+  max-width: 700px;
+  width: 100%;
+  margin: 100px auto; /* Sayfanın ortasında */
+  padding: 40px;
   background-color: #f9f9f9;
-  border-radius: 12px;
+  border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
