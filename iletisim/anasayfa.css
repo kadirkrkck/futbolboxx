@@ -43,14 +43,7 @@ a {
 
 html, body {
   width: 100%;
-  mardin: 0;
-  padding:0;
-}
-
-.site-container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  width: 
 }
 
 /* =============== HEADER TASARIMI =============== */
