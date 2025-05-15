@@ -1,4 +1,4 @@
-/* =============== GENEL STİLLER =============== */
+paddi============ GENEL STİLLER =============== */
 * {
     margin: 0;
     padding: 0;
@@ -43,10 +43,17 @@ a {
 
 html, body {
   width: 100%;
+  mardin: 0;
+  padding:0;
   max-width: 100vw;
   overflow-x: hidden;
 }
 
+.site-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
 /* =============== HEADER TASARIMI =============== */
 header {
@@ -433,8 +440,6 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
-    position: relative;
-    bottom: 0;
     width: 100%;
     font-size: 14px;
     z-index: 1000;
