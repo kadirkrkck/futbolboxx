@@ -172,6 +172,7 @@ nav ul li a:hover {
     background-color: #f5a623;
     color: #fff;
 }
+
 nav ul li a::before {
     font-size: 20px;
     margin-right: 10px;
@@ -193,7 +194,6 @@ main {
     min-height: 100vh;
 }
 
-  
 /* =============== SON EKLENENLER =============== */
 .recent .content-boxes {
     display: flex;
@@ -269,7 +269,13 @@ main {
 
 
 /* =============== ÖNE ÇIKANLAR =============== */
-.featu
+.featured .content-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
 .featured .box {
     background-color: #fff;
     padding: 20px;
