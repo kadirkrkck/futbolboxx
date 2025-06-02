@@ -140,5 +140,4 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.setItem("yorumlar", JSON.stringify(comments));
         displayComments();
     };
-    commentBox('5692983001219072');
 });
