@@ -103,13 +103,8 @@
     <span class="star">★</span>
 </div>
     <!-- Yorum Alanı -->
-  <div class="yorum-alani" style="margin-top: 60px;">
-  <h3>Yorumlar</h3>
-  <textarea id="comment-text" placeholder="Yorumunuzu buraya yazın..." style="width: 100%; height: 100px; padding: 10px; font-size: 16px;"></textarea>
-  <br>
-  <button id="comment-btn" style="margin-top: 10px; padding: 10px 20px; font-size: 16px;">Yorum Yap</button>
-  <div id="comment-list" style="margin-top: 20px;"></div>
-</div>
+<h3>Yorumlar</h3>
+<div class="commentbox"></div>
 
 	   </main>
     </div>
@@ -118,7 +113,13 @@
         <p>&copy; 2025 Futbolbox | İletişim: futbolbox00@gmail.com</p>
     </footer>
 
+<!-- commentbox.io yorum sistemi -->
 <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+<script>
+  commentBox('5692983001219072'); // Buraya kendi project ID'ni yaz
+</script>
+
+<!-- Senin kendi JavaScript dosyan (arama.js) -->
 <script src="arama.js"></script>
 
 </body>
