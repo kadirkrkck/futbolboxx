@@ -51,7 +51,7 @@ html, body {
 /* =============== HEADER TASARIMI =============== */
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 20px 30px;
     background-color: #121212; 
@@ -69,9 +69,6 @@ header .logo {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #FFB300;
-	left: 50%;
-	transform: translateX(15%);
-
 }
 
 header .logo a {
@@ -88,7 +85,30 @@ header .logo a {
 header .logo a:hover {
     color: #27ae60;        /* İstersen hover rengi */
 }
+@media (max-width: 768px) {
+  header .search-bar input {
+    width: 150px;
+  }
 
+  header .logo h1 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header .search-bar {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  header .search-bar input {
+    width: 100%;
+  }
+}
 /* =============== ARAMA BARI =============== */
 header .search-bar {
     position: relative; /* EKLENDİ: Arama sonuçlarının doğru konumlanması için */
