@@ -616,28 +616,31 @@ input[type="submit"]:hover {
 
 @media screen and (max-width: 600px) {
   header {
-    flex-direction: row;
+    flex-direction: column; /* 🔁 row değil column */
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 10px 15px;
+    gap: 8px; /* biraz aralık */
   }
 
   header .logo {
     flex: 0 0 auto;
-    margin-right: 12px;
-  }
-
-  header .search-bar {
-    flex: 1 1 auto;
-    max-width: 70%;
-  }
-
-  header .search-bar input {
-    width: 100%;
+    margin: 0;
+    text-align: center;
   }
 
   header .logo h1 {
     font-size: 18px;
+  }
+
+  header .search-bar {
+    flex: 0 0 auto;
+    max-width: 90%;
+    width: 100%;
+  }
+
+  header .search-bar input {
+    width: 100%;
   }
 }
                             /*ARAMA ÇUBUĞU*/
