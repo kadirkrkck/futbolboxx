@@ -99,134 +99,6 @@ header .logo a:hover {
     flex-direction: column;
     align-items: flex-start;
   }
-	
-/* =============== ARAMA BARI =============== */
-header .search-bar {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-left: auto;
-    flex-shrink: 0; /* genişliğin taşmasını engeller */
-    width: fit-content; /*  içerik kadar genişlik */
-}
-
-header .search-bar input {
-    padding: 10px;
-    font-size: 1em;
-    width: 250px;
-    border-radius: 8px;
-    border: 2px solid #555;
-    background-color: #444;
-    color: #fff;
-    transition: all 0.4s ease;
-}
-
-header .search-bar input:focus {
-    width: 300px;
-    outline: none;
-}
-
-header .search-bar button {
-    padding: 10px 14px;
-    background-color: #f5a623;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    color: white;
-    font-weight: bold;
-}
-
-header .search-bar button:hover {
-    background-color: #e4951c;
-}
-
-/* Arama sonuçları kutusu */
-.search-results {
-    display: none;  /* Başlangıçta gizli */
-    position: absolute;
-    top: 60px; /* Arama çubuğu yüksekliğine göre ayarla */
-    left: 0;       /* input alanının tam genişliği için */
-    width: 100%;   /* arama çubuğunun genişliğine göre */
-    background-color: #fff;
-    max-height: 300px;
-    overflow-y: auto;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    padding: 5px 0;
-    font-family: "Segoe UI", sans-serif;
-    box-sizing: border-box; /* padding ve border dahil olsun */
-}
-
-/* Arama sonucu tek öğe */
-.search-results .result-item {
-    display: block;   /* EKLENDİ: ALT ALTA SIRALAMA İÇİN */
-    width: 100%;      /* tam genişlik */
-    padding: 12px 16px;
-    border-bottom: 1px solid #eee;
-    cursor: pointer;
-    transition: background-color 0.2s ease, color 0.2s ease;
-    box-sizing: border-box;
-}
-
-/* Son öğede alt çizgi olmasın */
-.search-results .result-item:last-child {
-    border-bottom: none;
-}
-
-/* Üzerine gelince renk değişimi */
-.search-results .result-item:hover {
-    background-color: #f5a623;
-    color: #fff;
-}
-
-/* Link gibi görünmesi için */
-.search-results .result-item a {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-@media (max-width: 768px) {
-  header .search-bar {
-    position: relative !important;
-    z-index: 1050 !important;
-  }
-
-  header .search-bar input {
-    width: 150px;
-  }
-
-  header .logo h1 {
-    font-size: 18px;
-  }
-
-  header {
-    justify-content: space-between;
-    flex-wrap: nowrap;
-  }
-
-  .search-results {
-    position: absolute !important;
-    top: 100% !important;
-    left: 0 !important;
-    width: 100% !important;
-    max-height: 300px !important;
-    overflow-y: auto !important;
-    z-index: 1100 !important;
-    margin-top: 5px !important;
-    background-color: #fff !important;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1) !important;
-    border-radius: 8px !important;
-  }
-
-  nav.sidebar {
-    position: relative;
-    z-index: 1000 !important;
-  }
 }
 
 /* =============== NAVBAR (YAN MENÜ) =============== */
@@ -280,6 +152,74 @@ nav ul li:nth-child(4) a::before { content: "🧤"; }
 nav ul li:nth-child(5) a::before { content: "👕"; }
 nav ul li:nth-child(6) a::before { content: "💪"; }
 nav ul li:nth-child(7) a::before { content: "📞"; }
+
+/* =============== ANA İÇERİK =============== */
+main {
+    margin-left: 220px;
+    padding: 100px 30px 60px 30px;
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+/* =============== KUTULAR =============== */
+.content-boxes {
+    display: flex;
+    flex-direction: column;  /* Kutuları dikey sıralar */
+    gap: 20px;  /* Kutular arasındaki mesafe */
+    justify-content: flex-start;  /* Kutuları yukarıya hizalar */
+    margin-top: 20px;  /* Üstten boşluk ekler */
+}
+
+.content-boxes .box {
+    display: flex;  /* Yatay hizalama için flex kullanılır */
+    flex-direction: row;  /* İçeriği yatay sıralar (görsel solda, metin sağda) */
+    background-color: #faf8f5;
+    padding: 20px;  /* Kutuların içindeki boşluğu azaltarak daha kompakt bir görünüm sağlar */
+    border-radius: 12px;  /* Yuvarlatılmış köşeler */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  /* Hafif gölge efekti */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Hover efekti animasyonu */
+    text-align: left;  /* İçeriği sol tarafa hizalar */
+    width: 100%;  /* Kutuları tam genişlikte yapar */
+    box-sizing: border-box;  /* Padding ve border’ın kutu boyutlarına dahil edilmesini sağlar */
+}
+
+.content-boxes .box img {
+    width: 40%;  /* Görsellerin genişliğini kutuya tam uyacak şekilde ayarlar */
+    height: auto;  /* Yüksekliği otomatik olarak ayarlar, orantıyı korur */
+    border-radius: 8px;  /* Görsel köşelerini yuvarlatır */
+    margin-right: 20px;  /* Görsel ile metin arasına mesafe ekler */
+}
+
+.content-boxes .box h3 {
+    font-size: 1.2rem;  /* Başlık boyutunu ayarlar */
+    margin-bottom: 10px;  /* Başlık ile içerik arasına mesafe ekler */
+}
+
+.content-boxes .box p {
+    font-size: 1rem;  /* Yazı boyutunu ayarlar */
+    color: #555;  /* Yazı rengini gri tonunda yapar */
+    margin-bottom: 15px;  /* Paragraf ile buton arasına mesafe ekler */
+}
+
+.content-boxes .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+background-color: #d3d3d3; /* Açık gri, istersen değiştirebilirsin */}
+
+.content-boxes .box .button {
+    background-color: #007BFF;  /* Butonun arka plan rengini mavi yapar */
+    color: #fff;  /* Buton yazısını beyaz yapar */
+    padding: 10px 20px;  /* Buton içindeki boşluk */
+    border-radius: 8px;  /* Butonun köşelerini yuvarlatır */
+    text-decoration: none;  /* Buton metninin altını çizmeyi kaldırır */
+    font-weight: bold;  /* Buton yazısını kalın yapar */
+    transition: background-color 0.3s ease;  /* Buton rengi değişimini yumuşatır */
+}
+
+.content-boxes .box .button:hover {
+    background-color: #0056b3;  /* Hover efektiyle butonun rengini koyulaştırır */
+}
+
 
 /* =============== ANA İÇERİK =============== */
 main {
