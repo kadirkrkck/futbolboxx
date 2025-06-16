@@ -642,6 +642,23 @@ input[type="submit"]:hover {
   header .search-bar input {
     width: 100%;
   }
+
+  /* NAV MENÜNÜN ÜST BOŞLUĞUNU AZALT */
+  nav {
+    top: 70px !important;
+    padding-top: 20px !important;
+  }
+
+  /* KUTULARI KÜÇÜLT VE DİKEY YERLEŞTİR */
+  .new-arrivals, .featured {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .product-box {
+    width: 90% !important;
+    margin: 10px auto !important;
+  }
 }
                             /*ARAMA ÇUBUĞU*/
 /* Arama sonuçları kutusunun stilini düzenleyelim */
