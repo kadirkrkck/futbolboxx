@@ -99,16 +99,7 @@ header .logo a:hover {
     flex-direction: column;
     align-items: flex-start;
   }
-
-  header .search-bar {
-    margin-top: 10px;
-    width: 100%;
-  }
-
-  header .search-bar input {
-    width: 100%;
-  }
-}
+	
 /* =============== ARAMA BARI =============== */
 header .search-bar {
     position: relative;
