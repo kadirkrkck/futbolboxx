@@ -111,11 +111,13 @@ header .logo a:hover {
 }
 /* =============== ARAMA BARI =============== */
 header .search-bar {
-    position: relative; /* EKLENDİ: Arama sonuçlarının doğru konumlanması için */
+    position: relative;
     display: flex;
     align-items: center;
     gap: 10px;
     margin-left: auto;
+    flex-shrink: 0; /* genişliğin taşmasını engeller */
+    width: fit-content; /*  içerik kadar genişlik */
 }
 
 header .search-bar input {
@@ -198,13 +200,24 @@ header .search-bar button:hover {
     height: 100%;
 }
 @media (max-width: 768px) {
-  /* Arama çubuğu kapsayıcısını üstte tut */
   header .search-bar {
     position: relative !important;
-    z-index: 1050 !important; /* Sol menüden daha yüksek olmalı */
+    z-index: 1050 !important;
   }
 
-  /* Arama sonuçlarını arama çubuğunun hemen altına konumlandır */
+  header .search-bar input {
+    width: 150px;
+  }
+
+  header .logo h1 {
+    font-size: 18px;
+  }
+
+  header {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
   .search-results {
     position: absolute !important;
     top: 100% !important;
@@ -212,22 +225,18 @@ header .search-bar button:hover {
     width: 100% !important;
     max-height: 300px !important;
     overflow-y: auto !important;
-    z-index: 1100 !important; /* Arama çubuğundan biraz daha yüksek */
+    z-index: 1100 !important;
     margin-top: 5px !important;
     background-color: #fff !important;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1) !important;
     border-radius: 8px !important;
   }
 
-  /* Sol menünün z-index'ini düşür */
   nav.sidebar {
-    position: relative; /* pozisyonu varsa */
-    z-index: 1000 !important; /* Arama sonuçlarının altında kalması için */
+    position: relative;
+    z-index: 1000 !important;
   }
 }
-
-
-
 
 /* =============== NAVBAR (YAN MENÜ) =============== */
 nav {
