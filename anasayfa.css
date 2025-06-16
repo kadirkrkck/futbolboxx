@@ -616,7 +616,7 @@ input[type="submit"]:hover {
 
 @media screen and (max-width: 600px) {
 header {
-flex-direction: column; 
+flex-direction: column; /* 🔁 row değil column */
 align-items: center;
 justify-content: center;
 padding: 10px 15px;
@@ -644,6 +644,7 @@ width: 100%;
 }
 }
 
+	
 	
                             /*ARAMA ÇUBUĞU*/
 /* Arama sonuçları kutusunun stilini düzenleyelim */
