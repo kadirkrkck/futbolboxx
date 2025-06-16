@@ -61,6 +61,7 @@ header {
     width: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     z-index: 999;
+    gap: 10px;
 }
 
 header .logo {
@@ -619,6 +620,7 @@ input[type="submit"]:hover {
     align-items: center;
     justify-content: space-between;
     padding: 10px 15px;
+    gap: 10px;
   }
 
   header .search-bar {
