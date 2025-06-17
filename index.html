@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUTBOLBOX</title>
+    <link rel="stylesheet" href="anasayfa.css">
+</head>
+<body>
+    <!-- Başlık Bölümü -->
+    <header>
+        <div class="logo">
+			<h1><a href="/Users/kadir/Desktop/Proje/anasayfa/index.html">FUTBOLBOX</a></h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Sitedeki içerikleri ara...">
+			    <div id="search-results" class="search-results">
+        <!-- Burada arama sonuçları listelenecek -->
+    </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/Users/kadir/Desktop/Proje/anasayfa/index.html">Ana Sayfa</a></li>
+            <li><a href="/Users/kadir/Desktop/Proje/haberler/haberler.html">Haberler</a></li>
+            <li><a href="/Users/kadir/Desktop/Proje/kramponlar/kramponlar.html">Kramponlar</a></li>
+            <li><a href="/Users/kadir/Desktop/Proje/eldivenler/eldivenler.html">Eldivenler</a></li>
+            <li><a href="/Users/kadir/Desktop/Proje/formalar/formalar.html">Formalar</a></li>
+            <li><a href="/Users/kadir/Desktop/Proje/iletisim/iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Son Eklenenler Bölümü -->
+        <section class="recent"><br>
+            <h2>Son Eklenenler</h2>
+            <div class="content-boxes">
+                <div class="box" onclick="window.location.href='sayfa1.html';">
+                    <a href="/Users/kadir/Desktop/Proje/kramponlar/adidaskramponlar/adidasöneri/adidasöneri.html">
+                        <img src="\Users\kadir\Desktop\Proje\anasayfa\img\speedflow.jpg" alt="Atak Oyuncuları İçin Adidas Krampon Önerileri">
+                        <div class="text">
+                            <h3>Atak Oyuncuları İçin Adidas Krampon Önerileri</h3>
+                            <p></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box" onclick="window.location.href='sayfa1.html';">
+					<a href="\Users\kadir\Desktop\Proje\kramponlar\nikekramponlar\Nike Mercurial Superfly 10 Elite\superfly.html">
+						<img src="\Users\kadir\Desktop\Proje\anasayfa\img\Nike Mercurial Superfly 10 Elite.jpg" alt="Nike Mercurial Superfly 10 Elite">
+						<div class="text">
+							<h3>Nike Mercurial Superfly 10 Elite İnceleme</h3>
+							<p></p>
+						</div>
+					</a>
+                </div>
+                <div class="box" onclick="window.location.href='sayfa2.html';">
+					<a href="\Users\kadir\Desktop\Proje\kramponlar\nikekramponlar\Nike Phantom GX 2 Elite\phantom.html">
+                    <img src="\Users\kadir\Desktop\Proje\anasayfa\img\Nike Phantom GX 2 Elite.jpg" alt="Nike Phantom GX 2 Elite">
+                    <div class="text">
+                        <h3>Nike Phantom GX 2 Elite İnceleme</h3>
+                        <p></p>
+                    </div>
+					</a>
+					
+                </div>
+                <div class="box" onclick="window.location.href='sayfa3.html';">
+				<a href="\Users\kadir\Desktop\Proje\kramponlar\nikekramponlar\Nike Mercurial Vapor 16 Elite\mercurial.html">
+                    <img src="\Users\kadir\Desktop\Proje\anasayfa\img\Nike Mercurial Vapor 16 Elite.jpg" alt="Nike Mercurial Vapor 16 Elite">
+                    <div class="text">
+                        <h3>Nike Mercurial Vapor 16 Elite İnceleme</h3>
+                        <p></p>
+                    </div>
+					</a>
+					
+                </div>
+            </div>
+        </section>
+
+        <br>
+
+        <!-- Öne Çıkanlar Bölümü -->
+        <section class="featured">
+            <h2>Öne Çıkanlar</h2>
+            <div class="content-boxes">
+                <a href="/Users/kadir/Desktop/Proje/kramponlar/adidaskramponlar/predator/predator.html" class="box">
+                    <img src="\Users\kadir\Desktop\Proje\anasayfa\img\predator.jpg" alt="Image">
+                    <div class="text">
+                        <h3>Adidas Predator 24 Elite FG</h3>
+                        <p>Adidas Predator 24 Elite FG incelemesi...</p>
+                    </div>
+                </a>
+                <br>
+                <a href="/Users/kadir/Desktop/Proje/haberler/icerikler/gsforma/galatasarayforma.html" class="box">
+                    <img src="\Users\kadir\Desktop\Proje\anasayfa\img\gsforma2.jpg" alt="Image">
+                    <div class="text">
+                        <h3>Galatasaray 25-26 Sezonu Forma Sızıntısı</h3>
+                        <p>Galatasaray yeni sezonda forma olarak efsane formasını düşünüyor...</p>
+                    </div>
+                </a>
+                <br>
+                <a href="/Users/kadir/Desktop/Proje/eldivenler/pumaeldivenler/grip/grip.html" class="box">
+                    <img src="\Users\kadir\Desktop\Proje\anasayfa\img\Puma Future Grip 19.1.jpg" alt="Image">
+                    <div class="text">
+                        <h3>Puma Future Grip 19.1 İnceleme</h3>
+                        <p>Puma Future Grip 19.1 kaleci eldiveni incelemesi...</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Alt Bilgi Bölümü -->
+    <footer>
+        <p>&copy; 2025 futbolbox | İletişim: futbolbox00@gmail.com</p>
+    </footer>
+
+    <script src="arama.js"></script>
+</body>
+</html>
