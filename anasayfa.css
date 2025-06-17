@@ -853,6 +853,21 @@ input[type="submit"]:hover {
         font-size: 18px;
         text-align: center;
     }
-	
+	/* ——— Mobilde logo ve arama yanyana olsun ——— */
+@media (max-width: 768px) {
+  .site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .site-header .logo {
+    flex: 0 0 auto;
+  }
+  .site-header .search {
+    flex: 1 1 auto;
+    margin-left: 1rem;
+  }
+}
+
 	
 }
