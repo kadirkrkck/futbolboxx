@@ -53,7 +53,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 20px;
+    padding: 20px 30px;
     background-color: #121212; 
     color: #f1f1f1;
     position: fixed;
@@ -78,7 +78,6 @@ header .logo a {
     text-decoration: none;
     background: linear-gradient(to right, rgba(102, 102, 102), rgba(204, 204, 204), rgba(102, 102, 102));
     padding: 5px;
-    margin-left: 4px;
     color: #FFB300;
     font-weight: 700;
     display: inline-block;
@@ -276,10 +275,10 @@ main {
 }
 
 .recent .box {
-    background-color: #faf8f5;
+    background-color: #f7f7f7;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
     box-sizing: border-box;
@@ -349,10 +348,10 @@ main {
 }
 
 .featured .box {
-    background-color: #faf8f5;
+    background-color: #f7f7f7;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     align-items: center; /* Dikeyde ortalar */
