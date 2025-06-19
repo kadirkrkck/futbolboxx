@@ -66,39 +66,41 @@ header {
 .site-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-color: #000; /* header siyah */
-  padding: 10px;
+  background-color: #000;
+  padding: 8px 12px;
 }
 
 .logo-link {
+  flex: 1; /* Yarı alan */
   display: flex;
   align-items: center;
 }
 
 .logo-img {
-  height: 35px; /* mobil için daha küçük */
+  height: 35px; /* Mobil için uygun */
   width: auto;
 }
 
 .search-bar {
-  flex: 1;
-  margin-left: 10px;
+  flex: 1; /* Yarı alan */
+  display: flex;
+  justify-content: flex-end;
 }
 
 .search-bar input {
   width: 100%;
+  max-width: 180px; /* Mobilde çok taşmasın */
   padding: 6px 8px;
   border: none;
   border-radius: 4px;
-  background-color: #f5f5dc; /* bej kutucuk */
+  background-color: #f5f5dc;
   font-size: 14px;
 }
 
 .search-bar input:focus,
 .search-bar input:hover {
   outline: none;
-  border: 1px solid orange; /* turuncu hover/focus */
+  border: 1px solid orange;
 }
 /* =============== ARAMA BARI =============== */
 header .search-bar {
