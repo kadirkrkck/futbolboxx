@@ -255,7 +255,6 @@ nav ul li:nth-child(2) a::before { content: "📰"; }
 nav ul li:nth-child(3) a::before { content: "👟"; }
 nav ul li:nth-child(4) a::before { content: "🧤"; }
 nav ul li:nth-child(5) a::before { content: "👕"; }
-nav ul li:nth-child(6) a::before { content: "💪"; }
 nav ul li:nth-child(7) a::before { content: "📞"; }
 
 /* =============== ANA İÇERİK =============== */
