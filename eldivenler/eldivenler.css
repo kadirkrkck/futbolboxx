@@ -254,7 +254,7 @@ main {
     background-color: #faf8f5;
     padding: 20px;  /* Kutuların içindeki boşluğu azaltarak daha kompakt bir görünüm sağlar */
     border-radius: 12px;  /* Yuvarlatılmış köşeler */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  /* Hafif gölge efekti */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);  /* Hafif gölge efekti */
     transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Hover efekti animasyonu */
     text-align: left;  /* İçeriği sol tarafa hizalar */
     width: 100%;  /* Kutuları tam genişlikte yapar */
@@ -294,7 +294,7 @@ main {
 }
 .content-boxes .box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
     background-color: #d3d3d3; /* Açık gri, istersen değiştirebilirsin */
 }
 
@@ -341,7 +341,7 @@ main {
 }
 .featured .box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
     background-color: #d3d3d3; /* Açık gri, istersen değiştirebilirsin */
 }
 
