@@ -260,7 +260,6 @@ main {
     width: 100%;  /* Kutuları tam genişlikte yapar */
     box-sizing: border-box;  /* Padding ve border’ın kutu boyutlarına dahil edilmesini sağlar */
 }
-
 .content-boxes .box img {
     width: 40%;  /* Görsellerin genişliğini kutuya tam uyacak şekilde ayarlar */
     height: auto;  /* Yüksekliği otomatik olarak ayarlar, orantıyı korur */
