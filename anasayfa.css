@@ -172,7 +172,7 @@ header .search-bar button:hover {
 
 /* Üzerine gelince renk değişimi */
 .search-results .result-item:hover {
-    background-color: #f5a623;
+    background-color: #90ee90;
     color: #fff;
 }
 
