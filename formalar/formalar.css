@@ -264,6 +264,11 @@ nav ul li:nth-child(4) a::before { content: "🧤"; }
 nav ul li:nth-child(5) a::before { content: "👕"; }
 nav ul li:nth-child(6) a::before { content: "📞"; }
 
+a.active {
+  font-weight: bold;
+  color: #ff6600;
+  text-decoration: underline;
+}
 /* =============== ANA İÇERİK =============== */
 main {
     margin-left: 220px;
