@@ -66,25 +66,17 @@ header {
 .site-header {
   display: flex;
   align-items: center;
-  padding: 10px;
-  background-color: #222; /* senin site rengine göre */
+  background-color: #000; /* header siyah */
+  padding: 10px 20px;
 }
 
 .logo-link {
   display: flex;
   align-items: center;
-  text-decoration: none;
 }
 
 .logo-img {
-  height: 40px;
-}
-
-.logo-text {
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold;
-  margin-left: 8px;
+  height: 40px; /* logoyu sabit yüksekliğe getirir */
 }
 
 .search-bar {
@@ -92,14 +84,51 @@ header {
 }
 
 .search-bar input {
-  padding: 5px;
+  padding: 5px 10px;
   border-radius: 4px;
   border: none;
+  background-color: #f5f5dc; /* bej kutucuk */
 }
 
+.search-bar input:focus,
+.search-bar input:hover {
+  outline: none;
+  border: 1px solid orange; /* turuncu imleç efekti */
+}
 /* =============== ARAMA BARI =============== */
 header .search-bar {
-    position: relative; /* EKLENDİ: Arama sonuçlarının doğru konumlanması için */
+    position: relative; /* EKLENDİ: Arama sonuçlarının doğru konum.site-header {
+  display: flex;
+  align-items: center;
+  background-color: #000; /* header siyah */
+  padding: 10px 20px;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 40px; /* logoyu sabit yüksekliğe getirir */
+}
+
+.search-bar {
+  margin-left: auto;
+}
+
+.search-bar input {
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: none;
+  background-color: #f5f5dc; /* bej kutucuk */
+}
+
+.search-bar input:focus,
+.search-bar input:hover {
+  outline: none;
+  border: 1px solid orange; /* turuncu imleç efekti */
+}lanması için */
     display: flex;
     align-items: center;
     gap: 10px;
