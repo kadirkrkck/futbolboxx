@@ -146,5 +146,20 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.setItem("yorumlar", JSON.stringify(comments));
         displayComments();
     };
+
+// Sayfanın dosya adını al
+const currentPage = window.location.pathname.split("/").pop();
+
+// Menüdeki tüm linkleri seç
+const menuLinks = document.querySelectorAll("ul li a");
+
+menuLinks.forEach(link => {
+  const linkPage = link.getAttribute("href").split("/").pop();
+
+  // Ana sayfa için kontrol (link boş veya index.html)
+  if (linkPage === currentPage || (linkPage === "" && (currentPage === "" || currentPage === "index.html"))) {
+    link.classList.add("active");
+  }
+});
 	
 });
