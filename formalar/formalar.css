@@ -295,7 +295,7 @@ main {
 }
 .content-boxes .box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
     background-color: #d3d3d3; /* Açık gri, istersen değiştirebilirsin */
 }
 
@@ -342,7 +342,7 @@ main {
 }
 .featured .box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
     background-color: #d3d3d3; /* Açık gri, istersen değiştirebilirsin */
 }
 
