@@ -269,13 +269,49 @@ a.active {
   color: #ff6600;
   text-decoration: underline;
 }
+
 /* =============== ANA İÇERİK =============== */
 main {
     margin-left: 220px;
     padding: 100px 30px 60px 30px;
-    background-color: #f2f2f2;
+    background-color: #90ee90;
     min-height: 100vh;
 }
+
+.futbol-orta-saha-yatay {
+    width: 100%;
+    max-width: 1000px;
+    height: 120px;
+    margin: 60px auto;
+    position: relative;
+    background: transparent;
+}
+
+.futbol-orta-saha-yatay::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 4px;
+    background-color: white;
+    transform: translate(-50%, -50%);
+}
+
+
+.futbol-orta-saha-yatay::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border: 4px solid white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
 
 /* =============== SON EKLENENLER =============== */
 .recent .content-boxes {
@@ -287,7 +323,7 @@ main {
 }
 
 .recent .box {
-    background-color: #90ee90;
+    background-color: #f2f2f2;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
@@ -360,7 +396,7 @@ main {
 }
 
 .featured .box {
-    background-color: #90ee90;
+    background-color: #f2f2f2;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
