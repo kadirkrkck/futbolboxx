@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUTBOLBOX - Ana Sayfa</title>
+    <link rel="stylesheet" href="haberler.css">
+</head>
+<body>
+    <!-- Başlık Bölümü -->
+    <header>
+        <div class="logo">
+			<h1><a href="../anasayfa/index.html">FUTBOLBOX</a></h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Sitedeki içerikleri ara...">
+			    <div id="search-results" class="search-results">
+        <!-- Burada arama sonuçları listelenecek -->
+    </div>
+        </div>
+    </header>
+
+    <!-- Yan Menü Bölümü -->
+    <aside class="sidebar">
+        <nav>
+            <ul>
+            <li><a href="../anasayfa/index.html">Ana Sayfa</a></li>
+            <li><a href="../haberler/haberler.html"class="active">Haberler</a></li>
+            <li><a href="../kramponlar/kramponlar.html">Kramponlar</a></li>
+            <li><a href="../eldivenler/eldivenler.html">Eldivenler</a></li>
+            <li><a href="../formalar/formalar.html">Formalar</a></li>
+            <li><a href="../iletisim/iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Ana İçerik Bölümü -->
+
+    <main>
+        <!-- Haberler Bölümü (Kutular ile) -->
+        <section class="haberler"><br>
+            <h2>Haberler</h2>
+          <div class="content-boxes">
+    <a href="../haberler/icerikler/gsforma/galatasarayforma.html" class="box" data-category="forma">
+        <img src="../haberler/icerikler/gsforma/gsforma.jpg" alt="forma">
+        <p>Galatasaray 25-26 Sezonu Forma Sızıntısı</p>
+    </a>
+
+    <a href="../haberler/icerikler/interforma/interforma.html" class="box" data-category="eldiven">
+        <img src="../haberler/img2/İnterforma.jpg" alt="forma">
+        <p>İnter 25-26 Sezonu Forma Sızıntısı</p>
+    </a>
+
+    <a href="../haberler/icerikler/bjkforma/bjkforma.html" class="box" data-category="forma">
+        <img src="../haberler/img2/bjkforma.jpg" alt="Özel Forma">
+        <p>Beşiktaş 25-26 Sezonu Forma Sızıntısı</p>
+    </a>
+</div>
+
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Futbolbox | İletişim: futbolbox00@gmail.com</p>
+    </footer>
+
+<script src="../anasayfa/arama.js"></script>
+
+</body>
+</html>
