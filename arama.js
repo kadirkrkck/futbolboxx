@@ -60,8 +60,8 @@ document.addEventListener("DOMContentLoaded", function () {
   var s = d.createElement('script');
   s.src = 'https://cdn.commento.io/js/commento.js';
   s.async = true;
-  s.setAttribute('data-id', '5692983001219072-proj'); 
   d.body.appendChild(s);
 })();
+
 
 });
