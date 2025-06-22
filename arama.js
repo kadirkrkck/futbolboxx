@@ -55,12 +55,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // *** Commento scriptini dinamik olarak sayfaya ekle ***
-    (function() {
-      var d = document;
-      var s = d.createElement('script');
-      s.src = 'https://cdn.commento.io/js/commento.js';
-      s.async = true;
-      d.body.appendChild(s);
-    })();
+(function() {
+  var d = document;
+  var s = d.createElement('script');
+  s.src = 'https://cdn.commento.io/js/commento.js';
+  s.async = true;
+  s.setAttribute('data-id', '5692983001219072-proj'); // Eğer site ID kullanıyorsan buraya ekle
+  d.body.appendChild(s);
+})();
 
 });
