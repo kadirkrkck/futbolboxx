@@ -1060,7 +1060,7 @@ button:hover {
 }
 
 /* Büyük Tablet ve Küçük Dizüstü Bilgisayarlar (min-width: 769px) */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     body {
         font-size: 16px;
         line-height: 1.7;
