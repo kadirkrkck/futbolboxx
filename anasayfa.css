@@ -1022,7 +1022,7 @@ button:hover {
 /* Orta Boy Ekranlar (max-width: 768px) */
 @media (max-width: 768px) {
     body {
-        font-size: 23px; /* Daha geniş tabletlerde biraz daha büyük yazı boyutu */
+        font-size: 24px; /* Daha geniş tabletlerde biraz daha büyük yazı boyutu */
         line-height: 1.6;
     }
 
