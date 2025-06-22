@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim Formu</title>
+    <link rel="stylesheet" href="../anasayfa/anasayfa.css">
+</head>
+<body>
+
+    <!-- Başlık Bölümü -->
+    <header>
+        <div class="logo">
+			<h1><a href="../anasayfa/index.html">FUTBOLBOX</a></h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Sitedeki içerikleri ara...">
+			    <div id="search-results" class="search-results">
+        <!-- Burada arama sonuçları listelenecek -->
+    </div>
+        </div>
+    </header>
+
+		
+    
+    <nav>
+<ul>
+  <li><a href="../anasayfa/index.html">Ana Sayfa</a></li>
+  <li><a href="../haberler/haberler.html">Haberler</a></li>
+  <li><a href="../kramponlar/kramponlar.html">Kramponlar</a></li>
+  <li><a href="../eldivenler/eldivenler.html">Eldivenler</a></li>
+  <li><a href="../formalar/formalar.html">Formalar</a></li>
+  <li><a href="../iletisim/iletisim.html" class="active">İletişim</a></li>
+</ul>
+    </nav>
+	<main>
+<section class="recent"><br><br>
+<h1>BİZE YAZIN...</h1>
+<br>
+
+<form action="https://formspree.io/f/mzzgbabq" method="POST">
+  <label for="name">İsim:</label>
+  <input type="text" id="name" name="name" required />
+
+  <label for="surname">Soyad:</label>
+  <input type="text" id="surname" name="surname" required />
+
+  <label for="email">E-posta:</label>
+  <input type="email" id="email" name="email" required />
+
+  <label for="message">Mesaj:</label>
+  <textarea id="message" name="message" required rows="8" style="resize: vertical;"></textarea>
+
+  <button type="submit">Gönder</button>
+</form>
+
+
+
+</section>
+	</main>
+	
+<!-- FOOTER-->
+<footer class="footer-alani">
+  <div class="footer-icerik">
+    <div class="footer-kutu">
+      <h3>Hakkımızda</h3>
+      <p>FutbolBox, futbol ekipmanlarını tarafsızca inceleyen bağımsız bir platformdur. Kaliteli ürünleri objektif şekilde sizlere sunar.</p>
+    </div>
+    <div class="footer-kutu">
+      <h3>Sitemize Hoş Geldiniz</h3>
+      <p>Burada en güncel futbol haberlerini, krampon ve eldiven incelemelerini bulabilirsiniz.</p>
+    </div>
+    <div class="footer-kutu">
+      <h3>Kategoriler</h3>
+<ul>
+  <li><a href="index.html" class="active">Ana Sayfa</a></li>
+  <li><a href="../haberler/haberler.html">Haberler</a></li>
+  <li><a href="../kramponlar/kramponlar.html">Kramponlar</a></li>
+  <li><a href="../eldivenler/eldivenler.html">Eldivenler</a></li>
+  <li><a href="../formalar/formalar.html">Formalar</a></li>
+  <li><a href="../iletisim/iletisim.html">İletişim</a></li>
+</ul>
+    </div>
+  </div>
+  <div class="footer-alt">
+    © 2025 FutbolBox. Tüm hakları saklıdır. | <a href="futbolbox00@gmail.com">futbolbox00@gmail.com</a>
+  </div>
+</footer>
+<script src="../arama.js"></script>
+</body>
+</html>

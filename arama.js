@@ -12,12 +12,12 @@ document.addEventListener("DOMContentLoaded", function () {
         { title: "Galatasaray 25-26 Sezonu Forma Sızıntısı", url: "/Users/kadir/Desktop/Proje/haberler/İçerikler/Galatasarayforma.html" },
         { title: "Puma Future Grip 19.1 İnceleme", url: "ozel-tasarim-forma-sayfasi.html" },
         { title: "Beşiktaş 24-25 Forma İncelemesi", url: "/Users/kadir/Desktop/Proje/haberler/icerikler/bjkforma/bjkforma.html" },
-		{ title: "Adidas Predator 24 Elite FG İncelemesi", url: "/Users/kadir/Desktop/Proje/kramponlar/adidaskramponlar/predator/predator.html" },
-		{ title: "Puma Future Ultimate İncelemesi", url: "/Users/kadir/Desktop/Proje/kramponlar/pumakramponlar/future/future.html" },
-		{ title: "Adidas Predator Pro Goalkeeper Gloves Kaleci Eldiveni İncelemesi", url: "/Users/kadir/Desktop/Proje/eldivenler/adidaseldivenler/predatorpro/predatorpro.html" },
-		{ title: "Nike Vapor Grip3 Goalkeeper Gloves Kaleci Eldiveni İncelemesi", url: "/Users/kadir/Desktop/Proje/eldivenler/nikeeldivenler/gloves/gloves.html" },
-		{ title: "Puma Future Grip 19.1 Kaleci Eldiveni İncelemesi", url: "/Users/kadir/Desktop/Proje/eldivenler/pumaeldivenler/grip/grip.html" },
-		{ title: "Beşiktaş 24-25 Forma İncelemesi", url: "/Users/kadir/Desktop/Proje/haberler/icerikler/bjkforma/bjkforma.html" },
+        { title: "Adidas Predator 24 Elite FG İncelemesi", url: "/Users/kadir/Desktop/Proje/kramponlar/adidaskramponlar/predator/predator.html" },
+        { title: "Puma Future Ultimate İncelemesi", url: "/Users/kadir/Desktop/Proje/kramponlar/pumakramponlar/future/future.html" },
+        { title: "Adidas Predator Pro Goalkeeper Gloves Kaleci Eldiveni İncelemesi", url: "/Users/kadir/Desktop/Proje/eldivenler/adidaseldivenler/predatorpro/predatorpro.html" },
+        { title: "Nike Vapor Grip3 Goalkeeper Gloves Kaleci Eldiveni İncelemesi", url: "/Users/kadir/Desktop/Proje/eldivenler/nikeeldivenler/gloves/gloves.html" },
+        { title: "Puma Future Grip 19.1 Kaleci Eldiveni İncelemesi", url: "/Users/kadir/Desktop/Proje/eldivenler/pumaeldivenler/grip/grip.html" },
+        { title: "Beşiktaş 24-25 Forma İncelemesi", url: "/Users/kadir/Desktop/Proje/haberler/icerikler/bjkforma/bjkforma.html" },
     ];
 
     // Arama kutusuna yazıldıkça filtreleme
@@ -54,97 +54,13 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Yorum ekleme sistemi
-    const commentButton = document.getElementById("comment-btn");
-    const commentInput = document.getElementById("comment-text");
-    const commentListContainer = document.getElementById("comment-list");
-    const ratingStars = document.getElementById("rating-stars");
+    // *** Commento scriptini dinamik olarak sayfaya ekle ***
+    (function() {
+      var d = document;
+      var s = d.createElement('script');
+      s.src = 'https://cdn.commento.io/js/commento.js';
+      s.async = true;
+      d.body.appendChild(s);
+    })();
 
-    // localStorage'dan yorumları al
-    let comments = JSON.parse(localStorage.getItem("yorumlar")) || [];
-
-    // Yıldızları işaretleme işlevi
-    function setRating(rating) {
-        // Yıldızları sıfırlama
-        const stars = document.querySelectorAll(".star");
-        stars.forEach((star, index) => {
-            if (index < rating) {
-                star.classList.add("filled");
-            } else {
-                star.classList.remove("filled");
-            }
-        });
-    }
-
-    // Yıldız tıklama işlevi
-    ratingStars.addEventListener("click", function (e) {
-        const clickedStar = e.target;
-        if (clickedStar.classList.contains("star")) {
-            const rating = Array.from(ratingStars.children).indexOf(clickedStar) + 1;
-            setRating(rating);
-            commentButton.dataset.rating = rating; // Rating'i butona kaydet
-        }
-    });
-
-    // Yıldızlar başlangıçta boş olmalı
-    setRating(0);
-
-    // Yorumları ekranda gösterme
-    function displayComments() {
-        commentListContainer.innerHTML = '';
-        comments.forEach((commentObj, index) => {
-            const commentElement = document.createElement("div");
-            commentElement.classList.add("comment-item");
-            commentElement.style.border = "1px solid #ccc";
-            commentElement.style.padding = "10px";
-            commentElement.style.marginBottom = "10px";
-            commentElement.style.position = "relative";
-
-            commentElement.innerHTML = `
-                <p><strong>Yorum ${index + 1}:</strong> ${commentObj.text}</p>
-                <small style="color: gray;">${commentObj.date}</small>
-                <div class="stars">${getStarsHTML(commentObj.rating)}</div>
-                <button style="position: absolute; right: 10px; top: 10px;" onclick="deleteComment(${index})">Sil</button>
-            `;
-
-            commentListContainer.appendChild(commentElement);
-        });
-    }
-
-    // Yıldızları HTML olarak al
-    function getStarsHTML(rating) {
-        let starsHTML = '';
-        for (let i = 1; i <= 5; i++) {
-            starsHTML += i <= rating ? '<span class="star filled">★</span>' : '<span class="star">★</span>';
-        }
-        return starsHTML;
-    }
-
-    // Sayfa açıldığında yorumları göster
-    displayComments();
-
-    // Yorum gönderme işlevi
-    commentButton.addEventListener("click", function () {
-        const commentText = commentInput.value.trim();
-        const rating = parseInt(commentButton.dataset.rating);
-
-        if (commentText && rating > 0) {
-            const now = new Date().toLocaleString('tr-TR');
-            comments.push({ text: commentText, date: now, rating: rating });
-            localStorage.setItem("yorumlar", JSON.stringify(comments));
-            commentInput.value = '';
-            setRating(0); // Yıldızları sıfırla
-            displayComments();
-        } else {
-            alert("Yorumunuzu yazmayı ve bir değerlendirme yapmayı unutmayın!");
-        }
-    });
-
-    // Silme işlevi (global yapmak için window objesine ekleniyor)
-    window.deleteComment = function (index) {
-        comments.splice(index, 1);
-        localStorage.setItem("yorumlar", JSON.stringify(comments));
-        displayComments();
-    };
-	
 });
