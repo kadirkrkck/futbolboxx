@@ -54,15 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // *** Commento scriptini dinamik olarak  ***
-(function() {
-  var d = document;
-  var s = d.createElement('script');
-  s.src = 'https://cdn.commento.io/js/commento.js';
-  s.async = true;
-  s.setAttribute('data-id', '5700142141276160-proj');  // Buraya tam ID yazdım
-  d.body.appendChild(s);
-})();
+
 
 
 
