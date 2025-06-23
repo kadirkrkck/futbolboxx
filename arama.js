@@ -54,15 +54,24 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // *** Commento scriptini dinamik olarak  ***
-(function() {
-  var d = document;
-  var s = d.createElement('script');
-  s.src = 'https://cdn.commento.io/js/commento.js';
-  s.async = true;
-  s.setAttribute('data-id', '5700142141276160-proj');  // Buraya tam ID yazdım
-  d.body.appendChild(s);
-})();
+    
+document.addEventListener("DOMContentLoaded", function () {
+    const utterancesContainer = document.createElement("div");
+    utterancesContainer.id = "utterances-comments";
+    document.body.appendChild(utterancesContainer); // Yorum alanını ekle
+
+    const script = document.createElement("script");
+    script.src = "https://utteranc.es/client.js";
+    script.setAttribute("repo", "kadirkrkck/futbolboxx"); // Kendi repo adın
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("label", "Yorum");
+    script.setAttribute("theme", "github-light"); // github-dark da olabilir
+    script.crossOrigin = "anonymous";
+    script.async = true;
+
+    document.getElementById("utterances-comments").appendChild(script);
+});
+
 
 
 
