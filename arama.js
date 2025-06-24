@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Aranabilir içerik listesi
     const data = [
-        { title: "Nike Mercurial Superfly 10 Elite İnceleme", url: "/Users/kadir/Desktop/Proje/kramponlar/nikekramponlar/Nike%20Mercurial%20Superfly%2010%20Elite/superfly.html" },
+        { title: "Nike Mercurial Superfly 10 Elite İnceleme", url: "https://kadirkrkck.github.io/futbolboxx/kramponlar/nikekramponlar/Nike%20Mercurial%20Superfly%2010%20Elite/superfly.html" },
         { title: "Nike Phantom GX 2 Elite İnceleme", url: "/Users/kadir/Desktop/Proje/kramponlar/nikekramponlar/Nike%20Phantom%20GX%202%20Elite/phantom.html" },
         { title: "Nike Mercurial Vapor 16 Elite İnceleme", url: "/Users/kadir/Desktop/Proje/kramponlar/nikekramponlar/Nike%20Mercurial%20Vapor%2016%20Elite/mercurial.html" },
         { title: "Atak Oyuncuları İçin Adidas Krampon Önerileri", url: "/Users/kadir/Desktop/Proje/kramponlar/adidaskramponlar/adidasöneri/adidasöneri.html"},
