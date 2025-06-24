@@ -13,10 +13,14 @@ document.addEventListener("DOMContentLoaded", function () {
         { title: "Puma Future Grip 19.1 İnceleme", url: "ozel-tasarim-forma-sayfasi.html" },
         { title: "Beşiktaş 24-25 Forma İncelemesi", url: "/Users/kadir/Desktop/Proje/haberler/icerikler/bjkforma/bjkforma.html" },
         { title: "Adidas Predator 24 Elite FG İncelemesi", url: "https://kadirkrkck.github.io/futbolboxx/kramponlar/adidaskramponlar/predator/predator.html" },
-        { title: "Puma Future Ultimate İncelemesi", url: "/Users/kadir/Desktop/Proje/kramponlar/pumakramponlar/future/future.html" },
+        { title: "Puma Future Ultimate İncelemesi", url: "https://kadirkrkck.github.io/futbolboxx/kramponlar/pumakramponlar/future/future.html" },
         { title: "Adidas Predator Pro Goalkeeper Gloves Kaleci Eldiveni İncelemesi", url: "/Users/kadir/Desktop/Proje/eldivenler/adidaseldivenler/predatorpro/predatorpro.html" },
         { title: "Nike Vapor Grip3 Goalkeeper Gloves Kaleci Eldiveni İncelemesi", url: "/Users/kadir/Desktop/Proje/eldivenler/nikeeldivenler/gloves/gloves.html" },
         { title: "Puma Future Grip 19.1 Kaleci Eldiveni İncelemesi", url: "/Users/kadir/Desktop/Proje/eldivenler/pumaeldivenler/grip/grip.html" },
+        { title: "Beşiktaş 24-25 Forma İncelemesi", url: "https://kadirkrkck.github.io/futbolboxx/haberler/icerikler/bjkforma/bjkforma.html" },
+        { title: "Puma Ultra Ultimate FG/AG İncelemesi", url: "https://kadirkrkck.github.io/futbolboxx/kramponlar/pumakramponlar/ultra/ultra.html" },
+        { title: "Puma King Ultimate FG/AG İncelemesi", url: "https://kadirkrkck.github.io/futbolboxx/kramponlar/pumakramponlar/king/king.html" },
+        { title: "Beşiktaş 24-25 Forma İncelemesi", url: "https://kadirkrkck.github.io/futbolboxx/haberler/icerikler/bjkforma/bjkforma.html" },
         { title: "Beşiktaş 24-25 Forma İncelemesi", url: "https://kadirkrkck.github.io/futbolboxx/haberler/icerikler/bjkforma/bjkforma.html" },
     ];
 
