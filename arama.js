@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { title: "Beşiktaş 24-25 Forma İncelemesi", url: "https://kadirkrkck.github.io/futbolboxx/haberler/icerikler/bjkforma/bjkforma.html" },
         { title: "Puma Ultra Ultimate FG/AG İncelemesi", url: "https://kadirkrkck.github.io/futbolboxx/kramponlar/pumakramponlar/ultra/ultra.html" },
         { title: "Puma King Ultimate FG/AG İncelemesi", url: "https://kadirkrkck.github.io/futbolboxx/kramponlar/pumakramponlar/king/king.html" },
-        { title: "Beşiktaş 24-25 Forma İncelemesi", url: "https://kadirkrkck.github.io/futbolboxx/haberler/icerikler/bjkforma/bjkforma.html" },
+        { title: "Borussia Dortmund 25-26 İç Saha Forması İncelemesi", url: "https://kadirkrkck.github.io/futbolboxx/formalar/pumaformalar/dortmund/dortmund.html" },
         { title: "Beşiktaş 24-25 Forma İncelemesi", url: "https://kadirkrkck.github.io/futbolboxx/haberler/icerikler/bjkforma/bjkforma.html" },
     ];
 
