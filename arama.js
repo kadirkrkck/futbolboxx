@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
         { title: "Nike Phantom GX 2 Elite İnceleme", url: "/Users/kadir/Desktop/Proje/kramponlar/nikekramponlar/Nike%20Phantom%20GX%202%20Elite/phantom.html" },
         { title: "Nike Mercurial Vapor 16 Elite İnceleme", url: "/Users/kadir/Desktop/Proje/kramponlar/nikekramponlar/Nike%20Mercurial%20Vapor%2016%20Elite/mercurial.html" },
         { title: "Atak Oyuncuları İçin Adidas Krampon Önerileri", url: "/Users/kadir/Desktop/Proje/kramponlar/adidaskramponlar/adidasöneri/adidasöneri.html"},
-        { title: "Inter 25-26 Forma Sızıntısı", url: "/Users/kadir/Desktop/Proje/haberler/icerikler/interforma/interforma.html" },
-        { title: "Galatasaray 25-26 Sezonu Forma Sızıntısı", url: "/Users/kadir/Desktop/Proje/haberler/İçerikler/Galatasarayforma.html" },
+        { title: "Inter 25-26 Forma Sızıntısı", url: "https://kadirkrkck.github.io/futbolboxx/haberler/icerikler/interforma/interforma.html" },
+        { title: "Galatasaray 25-26 Sezonu Forma Sızıntısı", url: "https://kadirkrkck.github.io/futbolboxx/haberler/icerikler/gsforma/galatasarayforma.html" },
         { title: "Puma Future Grip 19.1 İnceleme", url: "ozel-tasarim-forma-sayfasi.html" },
         { title: "Beşiktaş 24-25 Forma İncelemesi", url: "/Users/kadir/Desktop/Proje/haberler/icerikler/bjkforma/bjkforma.html" },
         { title: "Adidas Predator 24 Elite FG İncelemesi", url: "/Users/kadir/Desktop/Proje/kramponlar/adidaskramponlar/predator/predator.html" },
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { title: "Adidas Predator Pro Goalkeeper Gloves Kaleci Eldiveni İncelemesi", url: "/Users/kadir/Desktop/Proje/eldivenler/adidaseldivenler/predatorpro/predatorpro.html" },
         { title: "Nike Vapor Grip3 Goalkeeper Gloves Kaleci Eldiveni İncelemesi", url: "/Users/kadir/Desktop/Proje/eldivenler/nikeeldivenler/gloves/gloves.html" },
         { title: "Puma Future Grip 19.1 Kaleci Eldiveni İncelemesi", url: "/Users/kadir/Desktop/Proje/eldivenler/pumaeldivenler/grip/grip.html" },
-        { title: "Beşiktaş 24-25 Forma İncelemesi", url: "/Users/kadir/Desktop/Proje/haberler/icerikler/bjkforma/bjkforma.html" },
+        { title: "Beşiktaş 24-25 Forma İncelemesi", url: "https://kadirkrkck.github.io/futbolboxx/haberler/icerikler/bjkforma/bjkforma.html" },
     ];
 
     // Arama kutusuna yazıldıkça filtreleme
