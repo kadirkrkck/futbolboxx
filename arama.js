@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { title: "Inter 25-26 Forma Sızıntısı", url: "https://kadirkrkck.github.io/futbolboxx/haberler/icerikler/interforma/interforma.html" },
         { title: "Galatasaray 25-26 Sezonu Forma Sızıntısı", url: "https://kadirkrkck.github.io/futbolboxx/haberler/icerikler/gsforma/galatasarayforma.html" },
         { title: "Puma Future Grip 19.1 İnceleme", url: "ozel-tasarim-forma-sayfasi.html" },
-        { title: "Beşiktaş 24-25 Forma İncelemesi", url: "/Users/kadir/Desktop/Proje/haberler/icerikler/bjkforma/bjkforma.html" },
+        { title: "Beşiktaş 24-25 Forma İncelemesi", url: "https://kadirkrkck.github.io/futbolboxx/formalar/adidasformalar/bjkforma/bjkforma.html" },
         { title: "Adidas Predator 24 Elite FG İncelemesi", url: "https://kadirkrkck.github.io/futbolboxx/kramponlar/adidaskramponlar/predator/predator.html" },
         { title: "Puma Future Ultimate İncelemesi", url: "https://kadirkrkck.github.io/futbolboxx/kramponlar/pumakramponlar/future/future.html" },
         { title: "Adidas Predator Pro Goalkeeper Gloves Kaleci Eldiveni İncelemesi", url: "/Users/kadir/Desktop/Proje/eldivenler/adidaseldivenler/predatorpro/predatorpro.html" },
