@@ -5,14 +5,14 @@ document.addEventListener("DOMContentLoaded", function () {
     // Aranabilir içerik listesi
     const data = [
         { title: "Nike Mercurial Superfly 10 Elite İnceleme", url: "https://kadirkrkck.github.io/futbolboxx/kramponlar/nikekramponlar/Nike%20Mercurial%20Superfly%2010%20Elite/superfly.html" },
-        { title: "Nike Phantom GX 2 Elite İnceleme", url: "/Users/kadir/Desktop/Proje/kramponlar/nikekramponlar/Nike%20Phantom%20GX%202%20Elite/phantom.html" },
-        { title: "Nike Mercurial Vapor 16 Elite İnceleme", url: "/Users/kadir/Desktop/Proje/kramponlar/nikekramponlar/Nike%20Mercurial%20Vapor%2016%20Elite/mercurial.html" },
-        { title: "Atak Oyuncuları İçin Adidas Krampon Önerileri", url: "/Users/kadir/Desktop/Proje/kramponlar/adidaskramponlar/adidasöneri/adidasöneri.html"},
+        { title: "Nike Phantom GX 2 Elite İnceleme", url: "https://kadirkrkck.github.io/futbolboxx/kramponlar/nikekramponlar/Nike%20Phantom%20GX%202%20Elite/phantom.html" },
+        { title: "Nike Mercurial Vapor 16 Elite İnceleme", url: "https://kadirkrkck.github.io/futbolboxx/kramponlar/nikekramponlar/Nike%20Mercurial%20Vapor%2016%20Elite/mercurial.html" },
+        { title: "Atak Oyuncuları İçin Adidas Krampon Önerileri", url: "https://kadirkrkck.github.io/futbolboxx/kramponlar/adidaskramponlar/adidas%C3%B6neri/adidas%C3%B6neri.html"},
         { title: "Inter 25-26 Forma Sızıntısı", url: "https://kadirkrkck.github.io/futbolboxx/haberler/icerikler/interforma/interforma.html" },
         { title: "Galatasaray 25-26 Sezonu Forma Sızıntısı", url: "https://kadirkrkck.github.io/futbolboxx/haberler/icerikler/gsforma/galatasarayforma.html" },
         { title: "Puma Future Grip 19.1 İnceleme", url: "ozel-tasarim-forma-sayfasi.html" },
         { title: "Beşiktaş 24-25 Forma İncelemesi", url: "/Users/kadir/Desktop/Proje/haberler/icerikler/bjkforma/bjkforma.html" },
-        { title: "Adidas Predator 24 Elite FG İncelemesi", url: "/Users/kadir/Desktop/Proje/kramponlar/adidaskramponlar/predator/predator.html" },
+        { title: "Adidas Predator 24 Elite FG İncelemesi", url: "https://kadirkrkck.github.io/futbolboxx/kramponlar/adidaskramponlar/predator/predator.html" },
         { title: "Puma Future Ultimate İncelemesi", url: "/Users/kadir/Desktop/Proje/kramponlar/pumakramponlar/future/future.html" },
         { title: "Adidas Predator Pro Goalkeeper Gloves Kaleci Eldiveni İncelemesi", url: "/Users/kadir/Desktop/Proje/eldivenler/adidaseldivenler/predatorpro/predatorpro.html" },
         { title: "Nike Vapor Grip3 Goalkeeper Gloves Kaleci Eldiveni İncelemesi", url: "/Users/kadir/Desktop/Proje/eldivenler/nikeeldivenler/gloves/gloves.html" },
