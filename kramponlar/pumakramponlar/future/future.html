@@ -152,13 +152,15 @@
 
 
     <!-- Yorum Alanı -->
-  <div class="yorum-alani" style="margin-top: 60px;">
-  <h3>Yorumlar</h3>
-  <textarea id="comment-text" placeholder="Yorumunuzu buraya yazın..." style="width: 100%; height: 100px; padding: 10px; font-size: 16px;"></textarea>
-  <br>
-  <button id="comment-btn" style="margin-top: 10px; padding: 10px 20px; font-size: 16px;">Yorum Yap</button>
-  <div id="comment-list" style="margin-top: 20px;"></div>
-</div>
+ <div id="cusdis_thread"
+  data-host="https://cusdis.com"
+  data-app-id="59ad436f-ca8e-4cfc-91e6-23c9a783dd0d"
+  data-page-id="{{ 6 }}"
+  data-page-url="{{ PAGE_URL }}"
+  data-page-title="{{ PAGE_TITLE }}"
+></div>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
 
 
 </div>
